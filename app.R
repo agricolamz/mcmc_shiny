@@ -57,9 +57,9 @@ ui <- fluidPage(
                ),
                tabPanel("MCMC")
     ),
-    p("G. Moroz",
-      a("see code", 
-        href = "https://www.youtube.com/watch?v=OTO1DygELpY"))
+    p("G. Moroz, ",
+      a("see the code on GitHub.", 
+        href = "https://github.com/agricolamz/mcmc_shiny"))
 )
 
 server <- function(input, output) {
