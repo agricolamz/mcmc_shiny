@@ -1,11 +1,11 @@
 # # generate mcmc for visualisation
 # library(brms)
-# get_prior(x~1, data = tibble(x = rnorm(100, 50, 10)))
-# fit <- brm(x~1, data = tibble(x = rnorm(100, 50, 10)), 
-#            prior = prior(normal(0,10), class = Intercept) + 
+# get_prior(x~1, data = tibble(x = rnorm(100, 40, 30)))
+# fit <- brm(x~1, data = tibble(x = rnorm(100, 50, 10)),
+#            prior = prior(normal(0,10), class = Intercept) +
 #              prior(cauchy(0,2), class = sigma))
 # values <- fit[["fit"]]@sim[["samples"]][[1]][["b_Intercept"]]
-# values <- values[1:400]
+# values <- plot(values[1:400])
 # save(file = "mcmc.RData", values)
 
 library(shiny)
